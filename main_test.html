@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #container {
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .page {
+            width: 300px;
+            height: 200px;
+            position: absolute;
+            transition: transform 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="page" id="page1">
+            <h1>Page 1</h1>
+            <p>This is the content of page 1.</p>
+        </div>
+        <div class="page" id="page2">
+            <h1>Page 2</h1>
+            <p>This is the content of page 2.</p>
+        </div>
+    </div>
+    <button onclick="nextPage()">Next Page</button>
+    <button onclick="prevPage()">Previous Page</button>
+</body>
+</html>
